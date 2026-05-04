@@ -5,8 +5,6 @@ Key Insights: The problem only asks if any duplicate exists, not how many, makin
 
 Edge Case: Empty or Single Element: The loop should handle empty arrays ([]) or single-element arrays ([1]) correctly (returns false).
 
-Brute force approach
-
 Detailed Approach: 
 1.Hash SetInitialize an empty hash set (or hash map) to store visited integers.
 2.Iterate through the array nums once.
