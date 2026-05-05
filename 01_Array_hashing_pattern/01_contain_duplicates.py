@@ -13,7 +13,7 @@ Detailed Approach:
    (ii)If no, insert the element into the set.
 4.If the loop completes without finding a duplicate, return false
 
-Alternative Sorting Approach: Sorting the array first takes (O(n \log n)) time and (O(1)) or \(O(n)) space (depending on sorting algorithm) but is slower than hashing.
+Alternative Sorting Approach: Sorting the array first takes (O(n \log n)) time and (O(1)) or (O(n)) space (depending on sorting algorithm) but is slower than hashing.
 """
 
 #Hashing approach solution
