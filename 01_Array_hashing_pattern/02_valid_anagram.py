@@ -6,12 +6,11 @@ Key Insights:
 Edge Case: Different lengths: Always check length first; if len(s) != len(t), they cannot be anagrams.
 
 Detailed Approach: Frequency Counter (Hash Map/Array)
-1.Why: An anagram means both strings have identical character counts.2.Algorithm:If len(s) != len(t), return false immediately (edge case).
-2.Create a hash map or a frequency array of size 26 (for 'a'-'z').
-3.Iterate through (s), incrementing the count for each character.
-4.Iterate through (t), decrementing the count for each character.
-5.If any count in the frequency table is not zero, return false.
-6.Otherwise, return true.
+1. Length Check: The function first compares the lengths of \(s\) and \(t\). If they aren't equal, they cannot be anagrams, so it immediately returns False.
+2. Frequency Counting: It initializes two dictionaries, countS and countT. It iterates through both strings simultaneously (using their indices), incrementing the character count in each dictionary.
+3. Handling Missing Keys: The .get(c, 0) method is used to retrieve the current count of a character. If the character hasn't been seen yet, it defaults to 0 to avoid a KeyError.
+4. Comparison Loop: After building the maps, the function iterates through the keys in countS and compares its value (frequency) to the value for the same key in countT.
+5. Final Result: If any character count doesn't match, it returns False. If the loop finishes without mismatches, it returns True
 """
 
 #Hashing method

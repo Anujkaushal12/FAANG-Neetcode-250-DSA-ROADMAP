@@ -5,8 +5,6 @@ Key Insights: The problem only asks if any duplicate exists, not how many, makin
 
 Edge Case: Empty or Single Element: The loop should handle empty arrays ([]) or single-element arrays ([1]) correctly (returns false).
 
-Brute force approach
-
 Detailed Approach: 
 1.Hash SetInitialize an empty hash set (or hash map) to store visited integers.
 2.Iterate through the array nums once.
@@ -15,7 +13,7 @@ Detailed Approach:
    (ii)If no, insert the element into the set.
 4.If the loop completes without finding a duplicate, return false
 
-Alternative Sorting Approach: Sorting the array first takes (O(n \log n)) time and (O(1)) or \(O(n)) space (depending on sorting algorithm) but is slower than hashing.
+Alternative Sorting Approach: Sorting the array first takes (O(n \log n)) time and (O(1)) or (O(n)) space (depending on sorting algorithm) but is slower than hashing.
 """
 
 #Hashing approach solution
