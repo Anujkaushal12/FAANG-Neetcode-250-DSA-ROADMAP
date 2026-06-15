@@ -31,5 +31,4 @@ class Solution:
 Time complexity is O(n) because the algorithm processes each character of both strings once.
 
 Space complexity is O(n) due to storing character frequencies in hash maps.
-
 """
