@@ -14,6 +14,7 @@ Approach
 4. Traverse buckets in reverse order (highest frequency first).
 5. Add elements into result until k elements are collected.
 """
+from typing import List
 
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:

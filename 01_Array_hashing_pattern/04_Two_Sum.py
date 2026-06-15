@@ -14,7 +14,7 @@ Detailed approach:
   (i)If diff is already in your hashset, you've found the pair! You return the stored index of diff and your current index i.
   (ii)If it’s not there, you add the current number and its index to the map (hashset[n] = i) and move to the next step
 """
-
+from typing import List
 
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
