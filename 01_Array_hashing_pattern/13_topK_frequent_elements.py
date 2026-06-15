@@ -1,13 +1,13 @@
 """
-LeetCode 347 — Top K Frequent Elements
+LeetCode 347 — Top K Frequent Elements.
 
-Key Idea
+Key Idea:-
 ->Use a frequency hashmap to count how many times each number appears, then use Bucket Sort to group numbers by their frequencies.
 ->Since the maximum possible frequency of any number is len(nums), we create buckets where:
 ->freq[i] stores all numbers appearing exactly i times.
 ->Then traverse buckets from highest frequency to lowest and collect the first k elements.
 
-Approach
+Approach:-
 1. Create a dictionary count to store frequency of each number.
 2. Create a bucket list freq where index represents frequency.
 3. Store numbers into their corresponding frequency bucket.
@@ -20,7 +20,7 @@ class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
         # Dictionary to store frequency of each number
         count = {}
-
+        
         # Bucket list where index = frequency
         # Example: freq[2] contains numbers that are appearing 2 times
         freq = [[] for i in range(len(nums) + 1)]
