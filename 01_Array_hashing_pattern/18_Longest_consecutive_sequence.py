@@ -1,8 +1,8 @@
 """
 Key Idea::-
 1. Use a HashSet for O(1) lookup and only start counting sequences from numbers that are the beginning of a sequence.
-2. A number is considered a sequence start if:  (num-1 not belongs to set)
-3.Then keep expanding forward: num+1, num+2, num+3…
+2. A number is considered a sequence start if:  (num-1 not belongs to set).
+3.Then keep expanding forward: num+1, num+2, num+3….
 4.This avoids checking the same sequence multiple times.
 
 Detailed Approach:-
