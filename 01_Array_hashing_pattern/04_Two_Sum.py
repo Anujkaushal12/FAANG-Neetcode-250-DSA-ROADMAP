@@ -12,7 +12,7 @@ Detailed approach:
 2.Calculate the Difference: For each number, you calculate diff = target - n. This is the specific value needed to reach the goal.
 3.Check the Map:
   (i)If diff is already in your hashset, you've found the pair! You return the stored index of diff and your current index i.
-  (ii)If it’s not there, you add the current number and its index to the map (hashset[n] = i) and move to the next step
+  (ii)If it’s not there, you add the current number and its index to the map (hashset[n] = i) and move to the next step.
 """
 from typing import List
 
@@ -31,4 +31,5 @@ The time complexity of this solution is O(n), where n is the size of the input a
 
 Space Complexity:
 The space complexity is O(n), as the hash map can potentially store all elements of the input array 'nums' if they are all unique. In the best case, where the target sum is achieved with the first two elements, the space complexity would be O(1). However, in the worst case, if all elements are distinct, the hash map will store all elements, leading to O(n) space complexity.
+
 """

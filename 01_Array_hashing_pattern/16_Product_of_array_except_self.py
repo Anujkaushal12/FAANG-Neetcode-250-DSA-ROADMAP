@@ -2,11 +2,11 @@
 Leetcode question no: 238 :- product of array except  self
 
 Key Idea:-
-          For every index :- answer[i]=(product of left elements)×(product of right elements)
+          For every index :- answer[i]=(product of left elements)×(product of right elements).
 
 Instead of using division:
-                         1. First pass → store left products
-                         2. Second pass → multiply with right products
+                         1. First pass → store left products.
+                         2. Second pass → multiply with right products.
 
 Approach:
 # 1. Prefix Pass  -> Store product of all left elements

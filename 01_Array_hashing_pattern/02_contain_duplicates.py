@@ -16,7 +16,6 @@ Detailed Approach:
 Alternative Sorting Approach: Sorting the array first takes (O(n \log n)) time and (O(1)) or (O(n)) space (depending on sorting algorithm) but is slower than hashing.
 """
 from typing import List
-
 #Hashing approach solution
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:

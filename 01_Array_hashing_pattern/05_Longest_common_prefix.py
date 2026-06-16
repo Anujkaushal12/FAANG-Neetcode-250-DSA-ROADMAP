@@ -1,7 +1,7 @@
 """
 LeetCode 14 — Longest Common Prefix
 
-Key Idea:-
+->Key Idea:-
     ->Use the first string as a reference and compare its characters with the corresponding characters in all other strings.
 
     ->For each character position:

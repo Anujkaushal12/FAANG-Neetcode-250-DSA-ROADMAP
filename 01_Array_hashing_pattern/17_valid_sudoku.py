@@ -3,25 +3,25 @@ LeetCode 36. Valid Sudoku
 ---------------------------------------------------
 Key Idea:
 Use hash sets to track numbers already seen in:
-- Each row
-- Each column
-- Each 3x3 sub-grid
+- Each row.
+- Each column.
+- Each 3x3 sub-grid.
 
 If a number already exists in any of them,
 the Sudoku board is invalid.
 ---------------------------------------------------
 Approach:
 1. Create three hash maps:
-   - rows    -> stores numbers seen in each row
-   - cols    -> stores numbers seen in each column
-   - squares -> stores numbers seen in each 3x3 box
+   - rows    -> stores numbers seen in each row.
+   - cols    -> stores numbers seen in each column.
+   - squares -> stores numbers seen in each 3x3 box.
 2. Traverse every cell in the board.
 3. Skip empty cells (".").
 4. Check:
-   - If number already exists in current row
-   - OR current column
-   - OR current 3x3 square
-   -> return False
+   - If number already exists in current row.
+   - OR current column.
+   - OR current 3x3 square.
+   -> return False.
 5. Otherwise, add the number into all tracking sets.
 6. If traversal finishes successfully, return True.
 """

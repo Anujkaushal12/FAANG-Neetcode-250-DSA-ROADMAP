@@ -10,9 +10,9 @@ Detailed Approach:-
 //Encode
 1.Traverse each string in the list.
 2.Append:
-        ->length of string
+        ->length of string.
         ->#
-        ->actual string
+        ->actual string.
 3.Return the final encoded string.
 
 //Decode
@@ -46,13 +46,11 @@ class Codec:
 """
 Encode:-
 Time Complexity: O(n)
-
 Decode:-
 Time Complexity: O(n)
 
 Encode:-
 Space Complexity: O(n) for storing encoded string.
-
 Decode:-
 Space Complexity: O(n) for storing decoded output list.
 """

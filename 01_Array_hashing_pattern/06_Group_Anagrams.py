@@ -9,23 +9,19 @@ Core insight: anagram ↔ identical character-count signature.
  APPROACH — Character Count Hashing
  --------------------------
  1. Create a defaultdict(list) so any unseen key auto-initialises to an empty list — no KeyError, no manual `.setdefault()`.
- 
  2. For every string, build a count array of size 26.
     count[0] = freq of 'a', count[1] = freq of 'b', …
     Use `ord(c) - ord('a')` to map each character to an index.
-
  3. Convert the list → tuple (lists are mutable, so unhashable; tuples are immutable and can be used as dict keys).
-    
  4. Append the original string under that tuple key. Anagrams produce identical tuples → land in the same bucket.
-    
  5. Return all value-lists from the dict.
 
  Commone Mistakes or pitfalls:
- ✗  Using a plain dict  → KeyError on first unseen key
+ ✗  Using a plain dict  → KeyError on first unseen key.
  ✗  count[ord("c") - ord("a")]  → indexes on the letter "c", not
-    the loop variable c  (subtle but breaks everything)
- ✗  res[count].append(s)  → TypeError: unhashable type 'list'
-    Fix: res[tuple(count)].append(s)
+    the loop variable c  (subtle but breaks everything).
+ ✗  res[count].append(s)  → TypeError: unhashable type 'list'.
+    Fix: res[tuple(count)].append(s).
 """
 
 from typing import List
