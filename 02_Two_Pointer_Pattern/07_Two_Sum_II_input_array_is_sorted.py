@@ -2,12 +2,12 @@
 LeetCode Problem 167: Two Sum II - Input Array Is Sorted.
 
 Key Idea Approach:-
-The code implements the Two-Pointer Technique, which relies on the array being strictly sorted in ascending order.
-->Two pointers are initialized: l (left) at the start 0, and r (right) at the end of the array.
-->In each iteration, it calculates the sum of elements at both pointers (curr_sum).
-->If curr_sum exactly equals the target, it returns the indices. Because LeetCode 167 requires 1-indexed results, it returns [l+1, r+1].
-->If curr_sum is greater than the target, the right pointer moves left (r -= 1) to reduce the total sum.
-->If curr_sum is less than the target, the left pointer moves right (l += 1) to increase the total sum.
+->The code implements the Two-Pointer Technique, which relies on the array being strictly sorted in ascending order.
+    ->Two pointers are initialized: l (left) at the start 0, and r (right) at the end of the array.
+    ->In each iteration, it calculates the sum of elements at both pointers (curr_sum).
+    ->If curr_sum exactly equals the target, it returns the indices. Because LeetCode 167 requires 1-indexed results, it returns [l+1, r+1].
+    ->If curr_sum is greater than the target, the right pointer moves left (r -= 1) to reduce the total sum.
+    ->If curr_sum is less than the target, the left pointer moves right (l += 1) to increase the total sum.
 """
 from typing import List
 

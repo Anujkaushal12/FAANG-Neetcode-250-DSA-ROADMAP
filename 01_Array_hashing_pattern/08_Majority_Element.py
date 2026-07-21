@@ -34,12 +34,12 @@ from typing import List
 
 class Solution:
     def majorityelemnt(self,nums: List[int])-> int:
-        res,count=0,0
+        cand,vote_count=0,0
         for n in nums:
-            if count==0:
-                res=n
-            count += (1 if n==res else -1)
-        return res
+            if vote_count==0:
+                cand=n
+            vote_count += (1 if n==cand else -1)
+        return cand
 
 """
 Complexity Analysis
