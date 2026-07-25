@@ -69,7 +69,7 @@ class NumMatrix:
                 self.sumMat[r + 1][c + 1] = row_prefix + above
 
     def sumRegion(self,row1: int,col1: int,row2: int,col2: int) -> int:
-        # Shift by 1 because of extra padding row/column
+        # Shift by 1 because of extra padding row/column-
         r1, c1 = row1 + 1, col1 + 1
         r2, c2 = row2 + 1, col2 + 1
 
