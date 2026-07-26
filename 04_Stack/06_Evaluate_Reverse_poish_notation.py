@@ -17,6 +17,7 @@ Approach:-
             Push the result back onto the stack.
     3.After processing all tokens, return the only remaining element in the stack.
 """
+from typing import List
 
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:
