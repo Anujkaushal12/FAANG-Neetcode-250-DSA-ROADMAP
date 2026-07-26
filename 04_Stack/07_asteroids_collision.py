@@ -19,6 +19,7 @@ Approach:-
     3.If the current asteroid survives all collisions, push it onto the stack.
     4.After processing all asteroids, the stack contains the final state.
 """
+from typing import List
 
 class Solution:
     def asteroidCollision(self, asteroids: List[int]) -> List[int]:
