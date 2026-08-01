@@ -22,8 +22,8 @@ Step 1: Candidate Selection
 Traverse the array:
                 ->Increase count if the element already exists.
                 ->If there are more than 2 candidates:
-                ->Decrease every candidate count by 1.
-                ->Remove candidates whose count becomes 0.
+                    Decrease every candidate count by 1.
+                    Remove candidates whose count becomes 0.
 
 This process eliminates non-majority elements.
 
